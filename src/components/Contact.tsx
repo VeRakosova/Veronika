@@ -80,6 +80,7 @@ export default function Contact() {
                 <input type="hidden" name="access_key" value="a9c9de9d-d962-40cf-bf29-ce6b30310e8e" />
                 <input type="hidden" name="subject" value="Nový dopyt z webu" />
                 <input type="hidden" name="from_name" value="Veronika Rákošová Web" />
+                <input type="checkbox" name="botcheck" className="hidden" style={{ display: "none" }} />
                 
                 {status === "error" && (
                   <div className="p-4 bg-red-50 border border-red-100 text-red-600 rounded-xl flex items-start gap-3 mb-6">
