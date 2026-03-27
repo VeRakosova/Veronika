@@ -18,46 +18,8 @@ export default function Contact() {
           </p>
         </div>
 
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 lg:gap-24">
-          
-          {/* Contact Info (Left Column) */}
-          <div className="space-y-8 lg:pr-8 flex flex-col justify-between">
-            <div className="bg-slate-800/40 backdrop-blur-sm p-8 rounded-3xl border border-slate-700/50">
-              <h3 className="text-xl font-bold mb-8">Kontaktné údaje</h3>
-              <ul className="space-y-8">
-                <li>
-                  <a href="mailto:ahoj@veronikarakosova.sk" className="flex items-center gap-5 text-slate-300 hover:text-emerald-400 transition-colors group">
-                    <div className="w-14 h-14 bg-slate-800 rounded-2xl flex items-center justify-center group-hover:bg-emerald-900/50 group-hover:scale-110 transition-all shadow-inner">
-                      <Mail className="w-6 h-6" />
-                    </div>
-                    <span className="text-lg font-medium">ahoj@veronikarakosova.sk</span>
-                  </a>
-                </li>
-                <li>
-                  <a href="tel:+4219XXXXXXX" className="flex items-center gap-5 text-slate-300 hover:text-emerald-400 transition-colors group">
-                    <div className="w-14 h-14 bg-slate-800 rounded-2xl flex items-center justify-center group-hover:bg-emerald-900/50 group-hover:scale-110 transition-all shadow-inner">
-                      <Phone className="w-6 h-6" />
-                    </div>
-                    <span className="text-lg font-medium">+421 9XX XXX XXX</span>
-                  </a>
-                </li>
-                <li>
-                  <a href="#" className="flex items-center gap-5 text-slate-300 hover:text-emerald-400 transition-colors group">
-                    <div className="w-14 h-14 bg-slate-800 rounded-2xl flex items-center justify-center group-hover:bg-emerald-900/50 group-hover:scale-110 transition-all shadow-inner">
-                      <Link className="w-6 h-6" />
-                    </div>
-                    <span className="text-lg font-medium">LinkedIn: Veronika Rákošová</span>
-                  </a>
-                </li>
-              </ul>
-            </div>
-            
-            <div className="text-sm text-slate-500 pl-4">
-              <p>&copy; {new Date().getFullYear()} Veronika Rákošová. Všetky práva vyhradené.</p>
-            </div>
-          </div>
-
-          {/* Contact Form (Right Column) */}
+        <div className="max-w-2xl mx-auto">
+          {/* Contact Form */}
           <div className="bg-white rounded-[2rem] p-8 sm:p-10 shadow-2xl text-slate-800 shadow-emerald-900/10">
             <h3 className="text-2xl font-bold text-slate-900 mb-8">Napíšte mi</h3>
             <form className="space-y-5" onSubmit={(e) => e.preventDefault()}>
@@ -108,7 +70,10 @@ export default function Contact() {
               </div>
             </form>
           </div>
-          
+
+          <div className="mt-16 text-center text-sm text-slate-500">
+            <p>&copy; {new Date().getFullYear()} Veronika Rákošová. Všetky práva vyhradené.</p>
+          </div>
         </div>
       </div>
     </section>
