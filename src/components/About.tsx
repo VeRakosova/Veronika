@@ -4,7 +4,8 @@ const processSteps = [
   "Zoznámenie",
   "Audit & Stratégia",
   "Realizácia",
-  "Optimalizácia"
+  "Optimalizácia",
+  "Reporting"
 ];
 
 export default function About() {
